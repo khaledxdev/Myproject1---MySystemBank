@@ -36,7 +36,13 @@ private:
 public:
 
 	 static void AddClient()
-	{
+	 {
+
+
+		 if (!CheckAccessRights(clsUser::enPermissions::pAddNewClient))
+		 {
+			 return;// this will exit the function and it will not continue
+		 }
 
 		//Step1 
 

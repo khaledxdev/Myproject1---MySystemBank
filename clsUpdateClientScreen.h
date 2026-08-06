@@ -39,6 +39,12 @@ public:
 	static void UpdateClient()
 	{
 
+		if (!CheckAccessRights(clsUser::enPermissions::pUpdateClients))
+		{
+			return;// this will exit the function and it will not continue
+		}
+
+		system("cls");
 		_DrawScreenHeader("Update Client Screen ");
 
 

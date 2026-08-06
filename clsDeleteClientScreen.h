@@ -13,32 +13,33 @@ class clsDeleteClientScreen : protected clsScreen
 
 private:
 	
-	static void _ReadClientInfo(clsBankClient& Client)
+	static void _PrintClient(clsBankClient Client)
 	{
-		cout << "\nEnter First Name: \n";
-		Client.FirstName = clsInputValidate::ReadString();
+		cout << "\Client Card:";
+		cout << "\n___________________";
+		cout << "\nAccount Number : " << Client.AccountNumber();
+		cout << "\nFirstName      : " << Client.FirstName;
+		cout << "\nLastName       : " << Client.LastName;
+		cout << "\nFull Name      : " << Client.FullName();
+		cout << "\nEmail          : " << Client.Email;
+		cout << "\nPhone          : " << Client.Phone;
+		cout << "\Account Balance : " << Client.AccountBalance;
+		cout << "\n___________________\n";
 
-		cout << "Enter Last Name: \n";
-		Client.LastName = clsInputValidate::ReadString();
-
-		cout << "Enter Email: \n";
-		Client.Email = clsInputValidate::ReadString();
-
-		cout << "Enter Phone: \n";
-		Client.Phone = clsInputValidate::ReadString();
-
-		cout << "Enter Pin Code: \n";
-		Client.PinCod = clsInputValidate::ReadString();
-
-		cout << "Enter Account Balance: \n";
-		Client.AccountBalance = stof(clsInputValidate::ReadString());
 	}
 
 public:
 
 	static void DeleteClient()
 	{
-		
+
+		if (!CheckAccessRights(clsUser::enPermissions::pDeleteClient))
+		{
+			return;// this will exit the function and it will not continue
+		}
+
+
+		system("cls");
 		_DrawScreenHeader("Delete Client Screen");
 		
 		cout << "Please Enter AccountNumber\n";
@@ -52,19 +53,19 @@ public:
 		}
 
 		clsBankClient Client1 = clsBankClient::Find(AccountNumber);
-		Client1.Print();
+		_PrintClient(Client1);
 
-		char obchan;
+		char Answer;
 		cout << "\nAre you sure you want to delete this client y/n \n";
-		cin >> obchan;
+		cin >> Answer;
 
 
-		if (obchan == 'y' || obchan == 'y')
+		if (Answer == 'y' || Answer == 'y')
 		{
 			if (Client1.Delete())
 			{
 				cout << "\nClient Delete Successfully :-)\n";
-				Client1.Print();
+				_PrintClient(Client1);
 			}
 			else
 				cout << "\nError Client Was not Deleted\n";

@@ -24,6 +24,13 @@ public:
 
 	static void ShowClientsList()
 	{
+
+		if (!CheckAccessRights(clsUser::enPermissions::pListClients))
+		{
+			return;// this will exit the function and it will not continue
+		}
+
+		system("cls");
 		_DrawScreenHeader("List Clients Screen");
 
 		vector<clsBankClient>vClients = clsBankClient::GetClientList();

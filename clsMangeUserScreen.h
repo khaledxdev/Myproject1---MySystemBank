@@ -3,6 +3,11 @@
 #include<iostream>
 #include"clsScreen.h"
 #include"clsInPutValidate.h"
+#include"clsListUserScreen.h"
+#include"clsAddNewUserScreen.h"
+#include"clsDeleteUser.h"
+#include"clsUpdateUserScreen.h"
+#include"clsFindUserScreen.h"
 #include"iomanip"
 using namespace std;
 
@@ -35,32 +40,29 @@ private:
 		ShowManageUser();
 	}
 
-
 	static void _ShowListUserScreen()
 	{
-		cout << " --> List User Screen " << endl;
-		system("pause>0");
+		clsListUserScreen::ShoeUserList();
 	}
-
+	
 	static void _ShowAddNewClientScreen()
 	{
-		cout << " --> Add New Client " << endl;
-		
+		clsAddNewUserScreen::ShowAddNewUserScreen();
 	}
-
+	
 	static void _ShowDeleteUserScreen()
 	{
-		cout << " --> Delete User " << endl;
+		clsDeleteUser::showDeleteUserScreen();
 	}
 
 	static void _ShowUpdateScreen()
 	{
-		cout << " --> Update Screen " << endl;
+		clsUpdateUserScreen::ShowUpdateUserScreen();
 	}
 
 	static void _ShowFindUserScreen()
 	{
-		cout << " --> Find User Screen " << endl;
+		clsFindUserScreen::showFindUserScreen();
 	}
 
 
@@ -106,6 +108,8 @@ private:
 		}
 		case enMainMenueManageUser::eBackeToMainManu:
 		{
+		
+
 		}
 		}
 	}
@@ -115,6 +119,13 @@ public:
 
 	static void ShowManageUser()
 	{
+
+		if (!CheckAccessRights(clsUser::enPermissions::pManageUsers))
+		{
+			return;// this will exit the function and it will not continue
+		}
+
+
 		system("cls");
 		clsScreen::_DrawScreenHeader("\t Manage User Screen ");
 

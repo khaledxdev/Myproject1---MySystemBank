@@ -1,36 +1,30 @@
 ﻿  MyprojectKhaled.cpp
-D:\MyProjectInProgramm\MyprojectKhaled\clsString.h(40,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(40,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsString.h(45,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(45,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsString.h(194,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(194,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsInPutValidate.h(112,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsInPutValidate.h(112,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsInPutValidate.h(116,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsInPutValidate.h(116,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsBankClient.h(194,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsBankClient.h(194,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsWithDrawScreen.h(54,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsWithDrawScreen.h(54,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsTotalBalancesScreen.h(58,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsTotalBalancesScreen.h(58,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   (compiling source file 'MyprojectKhaled.cpp')
   
-D:\MyProjectInProgramm\MyprojectKhaled\clsMangeUserScreen.h(110,19): error C2027: use of undefined type 'clsMainScreen'
-  (compiling source file 'MyprojectKhaled.cpp')
-      D:\MyProjectInProgramm\MyprojectKhaled\clsMangeUserScreen.h(9,7):
-      see declaration of 'clsMainScreen'
-  
-D:\MyProjectInProgramm\MyprojectKhaled\clsMangeUserScreen.h(110,19): error C3861: 'ShowMainMenu': identifier not found
-  (compiling source file 'MyprojectKhaled.cpp')
-  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsBankClient.h(314,1): warning C4715: 'clsBankClient::Save': not all control paths return a value
+  MyprojectKhaled.vcxproj -> D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\x64\Debug\MyprojectKhaled.exe

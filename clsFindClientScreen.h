@@ -14,6 +14,14 @@ public:
 
 	static void Find()
 	{
+
+
+		if (!CheckAccessRights(clsUser::enPermissions::pFindClient))
+		{
+			return;// this will exit the function and it will not continue
+		}
+
+		system("cls");
 		_DrawScreenHeader("Find Client Screen ");
 		
 		cout << "Please Enter AccountNumber\n";

@@ -1,0 +1,43 @@
+﻿  MyprojectKhaled.cpp
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(40,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(45,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsString.h(194,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsInPutValidate.h(112,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsInPutValidate.h(116,26): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsBankClient.h(194,10): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsDeleteClientScreen.h(18,11): warning C4129: 'C': unrecognized character escape sequence
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsDeleteClientScreen.h(26,11): warning C4129: 'A': unrecognized character escape sequence
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsWithDrawScreen.h(54,49): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsUtil.h(64,5): warning C4102: 'defualt': unreferenced label
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsTotalBalancesScreen.h(58,54): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\clsAddNewUserScreen.h(78,11): warning C4129: 'M': unrecognized character escape sequence
+  (compiling source file 'MyprojectKhaled.cpp')
+  
+  Generating code
+  2 of 603 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  MyprojectKhaled.vcxproj -> D:\MyProjectInProgramm\MyprojectKhaled\Myproject1---MySystemBank\x64\Release\MyprojectKhaled.exe

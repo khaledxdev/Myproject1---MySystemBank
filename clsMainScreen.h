@@ -15,6 +15,7 @@
 #include"clsFindClientScreen.h"
 #include"clsTransaction.h"
 #include"clsMangeUserScreen.h"
+#include"clsGlobal.h"
 
 using namespace std;
 
@@ -32,10 +33,10 @@ private:
 
 	};
 
-	static short _ReadMainMenuOption()
+	static int _ReadMainMenuOption()
 	{
 		cout << setw(37) << left << "" << "Choose what do you want to do? [1 to 8]? ";
-		short Choice = clsInputValidate::ReadShortNumberBetween(1, 8, "Enter Number between 1 to 8");	
+		int Choice = clsInputValidate::ReadShortNumberBetween(1, 8, "Enter Number between 1 to 8");	
 		return Choice;
 	}
 
@@ -78,9 +79,9 @@ private:
 	}
 
 	 
-	static void _ShowEndScreen()
+	static void _Logout()
 	{
-		cout << "\nEnd Screen Will be here...\n";
+		CurrentUser = clsUser::Find("", "");
 	}
 
 
@@ -140,7 +141,7 @@ private:
 		case enMainMenueOptions::eExit:
 		{
 			system("cls");
-			_ShowEndScreen();
+			_Logout();
 			break;
 		}
 
@@ -167,7 +168,7 @@ public:
 		cout << setw(37) << left << "" << "\t[5] Fine Client.\n";
 		cout << setw(37) << left << "" << "\t[6] Transactions.\n";
 		cout << setw(37) << left << "" << "\t[7] Mange Users.\n";
-		cout << setw(37) << left << "" << "\t[8] LogeOut.\n";
+		cout << setw(37) << left << "" << "\t[8] LogOut.\n";
 		cout << setw(37) << left << "" << "=============================================\n";
 		
 
